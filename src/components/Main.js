@@ -21,7 +21,7 @@ function Main({
 
   return (
     <>
-    <Header link={<Link className="header__link" onClick={onSignOut}>Выйти</Link>} userData={userData} />
+    <Header link={<Link to="#" className="header__link" onClick={onSignOut}>Выйти</Link>} userData={userData} />
     <main className="content">
       <section className="profile">
         <div className="profile__container">

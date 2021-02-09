@@ -1,15 +1,20 @@
-import { useRef } from "react";
+import { useState } from "react";
 import PopupWithForm from "./PopupWithForm.js";
 function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar, textBtn }) {
-  //Используем реф инпута аватара
-  const textInput = useRef();
+  //Переменная состояния ссылки на аватар
+  const [avatarData, setAvatarData] = useState("");
+
+  function handleChange(evt) {
+    setAvatarData(evt.target.value);
+  }
 
   //Обработчик сабмита формы
   function handleSubmit(evt) {
     evt.preventDefault();
     onUpdateAvatar({
-      avatar: textInput.current.value,
+      avatar: avatarData,
     });
+    evt.target.reset();
   }
 
   return (
@@ -21,24 +26,21 @@ function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar, textBtn }) {
       nameForm="update-avatar"
       title="Обновить аватар"
       textBtn={textBtn}
-      children={
-        <>
-          <input
-            className="popup__input popup__input_link"
-            id="link-input"
-            name="avatar"
-            type="url"
-            placeholder="Ссылка на картинку"
-            ref={textInput}
-            required
-          />
-          <span
-            className="popup__error popup__error_visible"
-            id="link-input-error"
-          />
-        </>
-      }
-    />
+    >
+      <input
+        className="popup__input popup__input_link"
+        id="link-input"
+        name="avatar"
+        type="url"
+        placeholder="Ссылка на картинку"
+        onChange={handleChange}
+        required
+      />
+      <span
+        className="popup__error popup__error_visible"
+        id="link-input-error"
+      />
+    </PopupWithForm>
   );
 }
 

@@ -44,44 +44,40 @@ function EditProfilePopup({ isOpen, onClose, onUpdateUser, textBtn }) {
       nameForm="profile"
       title="Редактировать профиль"
       textBtn={textBtn}
-      children={
-        <>
-          {" "}
-          <input
-            className="popup__input popup__input_name"
-            id="name-input"
-            name="name"
-            type="text"
-            placeholder="Имя"
-            minLength={2}
-            maxLength={40}
-            required
-            value={name}
-            onChange={handleChangeName}
-          />
-          <span
-            className="popup__error popup__error_visible"
-            id="name-input-error"
-          />
-          <input
-            className="popup__input popup__input_job"
-            id="job-input"
-            name="about"
-            type="text"
-            placeholder="Описание"
-            minLength={2}
-            maxLength={200}
-            required
-            value={description}
-            onChange={handleChangeDescription}
-          />
-          <span
-            className="popup__error popup__error_visible"
-            id="job-input-error"
-          />{" "}
-        </>
-      }
-    />
+    >
+      <input
+        className="popup__input popup__input_name"
+        id="name-input"
+        name="name"
+        type="text"
+        placeholder="Имя"
+        minLength={2}
+        maxLength={40}
+        required
+        value={name}
+        onChange={handleChangeName}
+      />
+      <span
+        className="popup__error popup__error_visible"
+        id="name-input-error"
+      />
+      <input
+        className="popup__input popup__input_job"
+        id="job-input"
+        name="about"
+        type="text"
+        placeholder="Описание"
+        minLength={2}
+        maxLength={200}
+        required
+        value={description}
+        onChange={handleChangeDescription}
+      />
+      <span
+        className="popup__error popup__error_visible"
+        id="job-input-error"
+      />
+    </PopupWithForm>
   );
 }
 

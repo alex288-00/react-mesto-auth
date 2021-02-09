@@ -174,7 +174,7 @@ function App() {
               if (res) {
                 setLoggedIn(true);
                 history.push("/");
-                let userData = {
+                const userData = {
                   email: res.data.email,
                 };
                 setUserData(userData);
@@ -274,9 +274,10 @@ function App() {
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
-      <Switch>
-        <div className="page">
+      <div className="page">
+        <Switch>
           <ProtectedRoute
+            exact
             path="/"
             loggedIn={loggedIn}
             userData={userData.email}
@@ -296,36 +297,37 @@ function App() {
           <Route path="/sign-up">
             <Register onRegister={onRegister} />
           </Route>
+
           <Route exact path="/">
             {loggedIn ? <Redirect to="/" /> : <Redirect to="/sign-in" />}
           </Route>
-          <Footer />
-          <EditProfilePopup
-            isOpen={isEditProfilePopupOpen}
-            onClose={closeAllPopups}
-            onUpdateUser={handleUpdateUser}
-            textBtn={loader}
-          />
-          <EditAvatarPopup
-            isOpen={isEditAvatarPopupOpen}
-            onClose={closeAllPopups}
-            onUpdateAvatar={handleUpdateAvatar}
-            textBtn={loader}
-          />
-          <AddPlacePopup
-            isOpen={isAddPlacePopupOpen}
-            onClose={closeAllPopups}
-            onAddPlace={handleAddPlaceSubmit}
-            textBtn={placeLoader}
-          />
-          <ImagePopup card={selectedCard} onClose={closeAllPopups} />
-          <InfoTooltip
-            isOpen={infoModalOpen}
-            onClose={closeAllPopups}
-            InfoTool={infoModal}
-          />
-        </div>
-      </Switch>
+        </Switch>
+        <Footer />
+        <EditProfilePopup
+          isOpen={isEditProfilePopupOpen}
+          onClose={closeAllPopups}
+          onUpdateUser={handleUpdateUser}
+          textBtn={loader}
+        />
+        <EditAvatarPopup
+          isOpen={isEditAvatarPopupOpen}
+          onClose={closeAllPopups}
+          onUpdateAvatar={handleUpdateAvatar}
+          textBtn={loader}
+        />
+        <AddPlacePopup
+          isOpen={isAddPlacePopupOpen}
+          onClose={closeAllPopups}
+          onAddPlace={handleAddPlaceSubmit}
+          textBtn={placeLoader}
+        />
+        <ImagePopup card={selectedCard} onClose={closeAllPopups} />
+        <InfoTooltip
+          isOpen={infoModalOpen}
+          onClose={closeAllPopups}
+          InfoTool={infoModal}
+        />
+      </div>
     </CurrentUserContext.Provider>
   );
 }

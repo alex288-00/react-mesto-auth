@@ -1,5 +1,5 @@
-function InfoTooltip({ name, isOpen, onSubmit, onClose, text, InfoTool }) {
-  let { message, image } = InfoTool;
+function InfoTooltip({ isOpen, onClose, InfoTool }) {
+  const { message, image } = InfoTool;
   return (
     <div className={`popup ${isOpen ? "popup_opened" : ""}`}>
       <div className="popup__form popup__form_success-error">
