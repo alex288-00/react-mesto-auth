@@ -1,5 +1,5 @@
 {
-  "name": "mesto-react",
+  "name": "mesto-auth",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +13,7 @@
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
-  "homepage": "/",
+  "homepage": "https://alex288-00.github.io/mesto-auth",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
