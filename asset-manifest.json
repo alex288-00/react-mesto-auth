@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/react-mesto-auth/static/css/main.b696074e.chunk.css",
-    "main.js": "/react-mesto-auth/static/js/main.d0695ef2.chunk.js",
-    "main.js.map": "/react-mesto-auth/static/js/main.d0695ef2.chunk.js.map",
-    "runtime-main.js": "/react-mesto-auth/static/js/runtime-main.0db19d1d.js",
-    "runtime-main.js.map": "/react-mesto-auth/static/js/runtime-main.0db19d1d.js.map",
-    "static/js/2.e4ab59ea.chunk.js": "/react-mesto-auth/static/js/2.e4ab59ea.chunk.js",
-    "static/js/2.e4ab59ea.chunk.js.map": "/react-mesto-auth/static/js/2.e4ab59ea.chunk.js.map",
-    "static/js/3.e5bf19c8.chunk.js": "/react-mesto-auth/static/js/3.e5bf19c8.chunk.js",
-    "static/js/3.e5bf19c8.chunk.js.map": "/react-mesto-auth/static/js/3.e5bf19c8.chunk.js.map",
-    "index.html": "/react-mesto-auth/index.html",
-    "static/css/main.b696074e.chunk.css.map": "/react-mesto-auth/static/css/main.b696074e.chunk.css.map",
-    "static/js/2.e4ab59ea.chunk.js.LICENSE.txt": "/react-mesto-auth/static/js/2.e4ab59ea.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/react-mesto-auth/static/media/plus.bed8c136.svg",
-    "static/media/error.ed31265c.jpg": "/react-mesto-auth/static/media/error.ed31265c.jpg"
+    "main.css": "/static/css/main.b39ab92e.chunk.css",
+    "main.js": "/static/js/main.d0695ef2.chunk.js",
+    "main.js.map": "/static/js/main.d0695ef2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5fc27793.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5fc27793.js.map",
+    "static/js/2.e4ab59ea.chunk.js": "/static/js/2.e4ab59ea.chunk.js",
+    "static/js/2.e4ab59ea.chunk.js.map": "/static/js/2.e4ab59ea.chunk.js.map",
+    "static/js/3.e5bf19c8.chunk.js": "/static/js/3.e5bf19c8.chunk.js",
+    "static/js/3.e5bf19c8.chunk.js.map": "/static/js/3.e5bf19c8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b39ab92e.chunk.css.map": "/static/css/main.b39ab92e.chunk.css.map",
+    "static/js/2.e4ab59ea.chunk.js.LICENSE.txt": "/static/js/2.e4ab59ea.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/plus.bed8c136.svg",
+    "static/media/error.ed31265c.jpg": "/static/media/error.ed31265c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0db19d1d.js",
+    "static/js/runtime-main.5fc27793.js",
     "static/js/2.e4ab59ea.chunk.js",
-    "static/css/main.b696074e.chunk.css",
+    "static/css/main.b39ab92e.chunk.css",
     "static/js/main.d0695ef2.chunk.js"
   ]
 }
